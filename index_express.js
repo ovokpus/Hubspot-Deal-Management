@@ -8,8 +8,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-const API_KEY = "2a0d0872-c5e2-4cef-9811-4fffb5002e61";
-const companyId = '6175089432';
+const API_KEY = "XXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+const companyId = '00000000000000000';
 
 app.get('/companies', async (req, res) => {
     const companies = `https://api.hubapi.com/crm/v3/objects/companies/${companyId}/?hapikey=${API_KEY}`;
